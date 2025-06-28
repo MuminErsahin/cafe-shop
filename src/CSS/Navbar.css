@@ -1,0 +1,57 @@
+
+  .logo {
+    font-weight: bold;
+    font-size: 24px;
+  }
+
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+  }
+
+
+
+  .navbar {
+  position: sticky;         /* ✨ fixed yerine sticky */
+  top: 20px;                /* Yukarıdan boşluk */
+  z-index: 1000;
+  height: 180px;
+  left: 0;                  /* sticky için gerekmez ama koyabiliriz */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background-color: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+
+  padding: 0 60px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+
+
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav-links a {
+    text-decoration: none;
+    color: rgb(170, 168, 44);
+    font-size: 18px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+
+  .nav-links a:hover {
+    color: #284429;
+    text-shadow: 0 0 5px rgba(163, 217, 165, 0.7);
+  }
