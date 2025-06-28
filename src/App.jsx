@@ -8,7 +8,7 @@ import Home from './components/Home';
 
 import './App.css';
 import { Routes, Route } from 'react-router-dom';
-
+import Footer from './components/Footer';
 function App() {
   return (
     <div className="font-serif bg-cream">
@@ -22,6 +22,7 @@ function App() {
         <Route path="/GallerySection" element={<GallerySection />} />
         <Route path="/ContactAndHours" element={<ContactAndHours />} />
       </Routes>
+       <Footer />
     </div>
   );
 }

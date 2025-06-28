@@ -4,7 +4,7 @@ export default function Navbar() {
   return (
    <nav className="navbar">
   <div className="logo">
-    <img src="/logo.png" alt="Vefa Logo" width="120" />
+    <img src="/logo.png" alt="Vefa Logo" width="190" />
   </div>
   <ul className="nav-links">
     <li><a href="/">Home</a></li>
