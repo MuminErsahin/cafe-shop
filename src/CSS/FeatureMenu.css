@@ -1,0 +1,52 @@
+.menu-section {
+  min-height: 100vh;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  font-family: 'Livvic', sans-serif;
+}
+
+.menu-section > div {
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 3rem 2rem;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 800px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+.menu-section h2 {
+  font-size: 1.4rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: #8e966b;
+  letter-spacing: 1px;
+}
+
+.menu-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  color: #8e966b;
+  font-size: 1.2rem;
+  line-height: 3rem;
+}
+
+.menu-section li {
+  margin-bottom: 0.5rem;
+}
+
+.menu-section span {
+  font-size: 1rem;
+ color: #8e966b;
+  font-style: italic;
+}

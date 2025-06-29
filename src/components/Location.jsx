@@ -1,14 +1,27 @@
-import React from 'react'
+import React, { useContext } from 'react';
+import { AppDataContext } from '../context/AppDataContext'; 
 import '../CSS/Location.css';
 
 function Location() {
+  const { gallery } = useContext(AppDataContext);
+  const locationImage = gallery.find(item => item.name === "locationImage"); 
+
   const handleDirectionClick = () => {
-    window.open('https://www.google.com/maps/dir/?api=1&destination=Vefa+Kitap+Kafe+Antika', '_blank');
+    window.open(
+      'https://www.google.com/maps/dir/?api=1&destination=Vefa+Kitap+Kafe+Antika',
+      '_blank'
+    );
   };
 
   return (
     <div className="location-container">
-      <img src="/location.png" alt="Cafe Location" className="location-image" />
+      {locationImage && (
+        <img
+          src={locationImage.imageUrl}
+          alt="Cafe Location"
+          className="location-image"
+        />
+      )}
       <div className="location-info">
         <h2>Ziyaret Etmek İster misiniz?</h2>
         <p>
@@ -22,4 +35,4 @@ function Location() {
   );
 }
 
-export default Location
+export default Location;
